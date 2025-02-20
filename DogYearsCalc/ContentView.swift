@@ -44,18 +44,31 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .fontDesign(.rounded)
                 .fontWeight(.black)
+//            Spacer()
             Slider(value: $age, in: 0...24, step: 1)
+                .fontDesign(.default)
             
             HStack{
                     Text("My age: \(Int(age))")
                         .fontWeight(.black)
+                        .font(.title)
+    
                     
                     Text("Dog's Age: \(calculateDogYears())")
                         .fontWeight(.black)
-                        
+                        .font(.title)
             }
+            Spacer()
+
+            Image(systemName: "pawprint.fill")
+                .resizable()
+                .scaledToFit()
+                .foregroundStyle(.brown)
+                .frame(width: 300, height: 300)
+            Spacer()
+            
         }
-        .padding()
+        .padding(30)
         }
     }
 }
