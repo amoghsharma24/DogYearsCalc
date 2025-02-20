@@ -20,7 +20,7 @@ struct ContentView: View {
     var body: some View {
         
         ZStack{
-            Color.accentColor
+            Color.teal
                 .ignoresSafeArea()
         
         VStack {
