@@ -15,7 +15,7 @@ struct ContentView: View {
         let conversionAge = 7.0
         
         return Int(age * conversionAge)
-    }
+    } 
     
     var body: some View {
         
